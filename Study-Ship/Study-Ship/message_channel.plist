@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>type_id</key>
+		<string>0</string>
+		<key>type_name</key>
+		<string>全部</string>
+	</dict>
+	<dict>
+		<key>type_id</key>
+		<string>105</string>
+		<key>type_name</key>
+		<string>前端开发</string>
+	</dict>
+	<dict>
+		<key>type_id</key>
+		<string>106</string>
+		<key>type_name</key>
+		<string>后端开发</string>
+	</dict>
+	<dict>
+		<key>type_id</key>
+		<string>107</string>
+		<key>type_name</key>
+		<string>职场/生活</string>
+	</dict>
+	<dict>
+		<key>type_id</key>
+		<string>109</string>
+		<key>type_name</key>
+		<string>设计</string>
+	</dict>
+	<dict>
+		<key>type_id</key>
+		<string>110</string>
+		<key>type_name</key>
+		<string>移动开发</string>
+	</dict>
+	<dict>
+		<key>type_id</key>
+		<string>114</string>
+		<key>type_name</key>
+		<string>其他类干货</string>
+	</dict>
+</array>
+</plist>

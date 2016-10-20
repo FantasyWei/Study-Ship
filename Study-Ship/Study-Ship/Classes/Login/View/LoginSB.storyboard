@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="FP3-wV-6Ss">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Nav Controller-->
+        <scene sceneID="l3h-97-qj8">
+            <objects>
+                <navigationController id="FP3-wV-6Ss" customClass="RWNavController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8ph-2c-BA1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="fXG-Rs-HYQ" kind="relationship" relationship="rootViewController" id="9W4-9q-oGL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kAc-s4-fTh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-146" y="365"/>
+        </scene>
+        <!--登录-->
+        <scene sceneID="v1l-lY-ppg">
+            <objects>
+                <viewController id="fXG-Rs-HYQ" customClass="RWLoginController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NsL-8j-aze"/>
+                        <viewControllerLayoutGuide type="bottom" id="SRU-S0-1K5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QJW-n2-aek">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入用户名" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6BE-sn-BqM">
+                                <frame key="frameInset" width="105" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="9l7-si-cIh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="9l7-si-cIh"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="9l7-si-cIh"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iyk-u6-HAQ">
+                                <frame key="frameInset" width="91" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FI6-9l-f09">
+                                <frame key="frameInset" width="61" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="登录" backgroundImage="myButton">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="highlighted" title="登录" backgroundImage="myButtonPressed"/>
+                                <connections>
+                                    <action selector="didLoginBtn:" destination="fXG-Rs-HYQ" eventType="touchUpInside" id="qx0-92-nmM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="FI6-9l-f09" firstAttribute="width" secondItem="6BE-sn-BqM" secondAttribute="width" id="DW0-yG-w3H"/>
+                            <constraint firstItem="FI6-9l-f09" firstAttribute="top" secondItem="iyk-u6-HAQ" secondAttribute="bottom" constant="30" id="MQ3-9G-op9"/>
+                            <constraint firstItem="iyk-u6-HAQ" firstAttribute="width" secondItem="6BE-sn-BqM" secondAttribute="width" id="QjJ-M3-zfd"/>
+                            <constraint firstItem="iyk-u6-HAQ" firstAttribute="centerX" secondItem="QJW-n2-aek" secondAttribute="centerX" id="bJZ-7B-IBW"/>
+                            <constraint firstItem="6BE-sn-BqM" firstAttribute="top" secondItem="NsL-8j-aze" secondAttribute="bottom" constant="100" id="dVf-p8-MyN"/>
+                            <constraint firstItem="6BE-sn-BqM" firstAttribute="centerX" secondItem="QJW-n2-aek" secondAttribute="centerX" id="fOi-H0-7Ax"/>
+                            <constraint firstItem="FI6-9l-f09" firstAttribute="centerX" secondItem="QJW-n2-aek" secondAttribute="centerX" id="q3v-yp-53U"/>
+                            <constraint firstItem="iyk-u6-HAQ" firstAttribute="top" secondItem="6BE-sn-BqM" secondAttribute="bottom" constant="30" id="xeK-pt-uYy"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="6BE-sn-BqM"/>
+                                <exclude reference="iyk-u6-HAQ"/>
+                                <exclude reference="FI6-9l-f09"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="dVf-p8-MyN"/>
+                                <exclude reference="fOi-H0-7Ax"/>
+                                <exclude reference="QjJ-M3-zfd"/>
+                                <exclude reference="bJZ-7B-IBW"/>
+                                <exclude reference="xeK-pt-uYy"/>
+                                <exclude reference="DW0-yG-w3H"/>
+                                <exclude reference="MQ3-9G-op9"/>
+                                <exclude reference="q3v-yp-53U"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="6BE-sn-BqM"/>
+                                <include reference="iyk-u6-HAQ"/>
+                                <include reference="FI6-9l-f09"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="dVf-p8-MyN"/>
+                                <include reference="fOi-H0-7Ax"/>
+                                <include reference="QjJ-M3-zfd"/>
+                                <include reference="bJZ-7B-IBW"/>
+                                <include reference="xeK-pt-uYy"/>
+                                <include reference="DW0-yG-w3H"/>
+                                <include reference="MQ3-9G-op9"/>
+                                <include reference="q3v-yp-53U"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="登录" id="bgj-zN-9PR">
+                        <barButtonItem key="leftBarButtonItem" title="返回" id="gVq-jI-pId">
+                            <connections>
+                                <action selector="didClickBackButton:" destination="fXG-Rs-HYQ" id="kZZ-bM-CDK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="LoginBtn" destination="FI6-9l-f09" id="Pe2-Yd-moc"/>
+                        <outlet property="nametextField" destination="6BE-sn-BqM" id="inl-Bi-vWE"/>
+                        <outlet property="passTexField" destination="iyk-u6-HAQ" id="xbK-Je-xly"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c8w-gD-z46" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="503" y="365"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="myButton" width="61" height="34"/>
+        <image name="myButtonPressed" width="61" height="34"/>
+    </resources>
+</document>

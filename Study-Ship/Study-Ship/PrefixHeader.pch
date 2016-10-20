@@ -1,0 +1,27 @@
+//
+//  PrefixHeader.pch
+//  Study-Ship
+//
+//  Created by ReoWei on 16/3/19.
+//  Copyright © 2016年 ReoWei. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+//define this constant if you want to use Masonry without the 'mas_' prefix
+#define MAS_SHORTHAND
+//define this constant if you want to enable auto-boxing for default syntax
+#define MAS_SHORTHAND_GLOBALS
+
+#define kUserNameKey  @"userNameKey"
+#define kPassWordKey  @"passWordKey"
+#define kAppBundleID @"appBundleID"
+
+
+#define kScreenFrame   [UIScreen mainScreen].bounds
+#define kScreenSize    [UIScreen mainScreen].bounds.size
+#define kScreenWidth   kScreenSize.width
+#define kScreenHeight  kScreenSize.height
+#define kColor        [UIColor colorWithRed:38/255.0 green:183/255.0 blue:188/255.0 alpha:1]
+#endif /* PrefixHeader_pch */
