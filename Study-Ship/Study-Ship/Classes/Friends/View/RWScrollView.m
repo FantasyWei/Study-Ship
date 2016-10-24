@@ -60,7 +60,7 @@
 }
 -(void)sendHttpRequest{
     
-    NSDictionary *dict = @{@"marking":@"ipbanner",@"token":@"0b620a96c05c99d610ba4ce65b417962",@"uid":@"2087502"};
+    NSDictionary *dict = @{@"cid":@"0",@"marking":@"ipbanner",@"timestamp":@"1477197026360",@"token":@"0b620a96c05c99d610ba4ce65b417962",@"uid":@"2087502"};
     
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     
@@ -74,9 +74,7 @@
             NSData *data = responseObject;
             // 解析json
             NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
-            
             NSArray *dataArr = [dict objectForKey:@"data"];
-            //            NSLog(@"%@",dataArr);
             [dataArr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
                 NSDictionary *dict = obj;
                 NSString *image = dict[@"pic"];
