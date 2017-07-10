@@ -18,6 +18,7 @@
 @end
 
 @implementation RWCellListsController
+
 -(NSMutableArray *)dataArray{
     if (!_dataArray) {
         _dataArray  = [NSMutableArray array];
